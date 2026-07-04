@@ -14,7 +14,7 @@ export function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Auth Service (Flask)</h1>
+        <h1>Portfolio Demo</h1>
         <p>React (Vite) frontend calling the API backend.</p>
       </header>
 

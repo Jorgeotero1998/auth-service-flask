@@ -1,52 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: #0b1020;
-  color: #e8eefc;
+  @apply bg-bg text-slate-100 antialiased;
 }
 
-.container {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 32px 20px;
-}
-
-.header h1 {
-  margin: 0 0 8px;
-  font-size: 34px;
-  letter-spacing: -0.02em;
-}
-
-.header p {
-  margin: 0 0 24px;
-  color: #b7c4e6;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 14px;
-  padding: 18px 18px;
-  margin-bottom: 14px;
-}
-
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.ok {
-  color: #57f287;
-}
-
-.error {
-  color: #ff6b6b;
-}
-
-code {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2px 6px;
-  border-radius: 8px;
+/* nice selection */
+::selection {
+  background: rgba(124, 92, 255, 0.35);
 }
 
