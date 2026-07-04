@@ -1,27 +1,37 @@
-# Auth Service (Flask) — ES/EN
+# OteroAuth
 
-## Español
+**EN**: Auth Service (Flask) — JWT access/refresh  
+**ES**: Servicio de Auth (Flask) — JWT access/refresh
 
-Servicio de autenticación en **Flask** (para demostrar que también manejás Flask además de FastAPI).
+## Live demo / Demo online
+- **Web**: https://auth-service-flask.vercel.app
+- **API docs**: https://auth-service-flask-api.onrender.com/docs
+- **API health**: https://auth-service-flask-api.onrender.com/api/v1/health
 
-### Features
-- Login con **JWT access/refresh**
-- Endpoint `/me`
-- Postgres + SQLAlchemy
-- Docker + CI
+## Stack
+- Flask
+- PostgreSQL
+- Docker
+- JWT
 
-### Run local
+## Local setup (Docker)
 
-```bash
+`ash
 cp .env.example .env
 docker compose up --build
-```
+`
 
-- API: `http://localhost:8000/health`
+## Credentials (demo)
 
----
+**EN**: Default demo admin is seeded from ADMIN_EMAIL / ADMIN_PASSWORD.  
+**ES**: El admin demo se crea desde ADMIN_EMAIL / ADMIN_PASSWORD.
 
-## English
+## Deploy
 
-Flask-based Auth Service to showcase Flask alongside your FastAPI projects.
+**EN**:
+- Backend: Render (Blueprint via ender.yaml)
+- Frontend: Vercel (Root Directory: web)
 
+**ES**:
+- Backend: Render (Blueprint con ender.yaml)
+- Frontend: Vercel (Root Directory: web)
